@@ -1,0 +1,611 @@
+/* Import the Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: #394150;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  padding: 7rem 9% 2rem;
+}
+
+.text-animation {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block; /* Ensures the caret follows the text */
+  color: #00ff7f;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 9%;
+}
+
+.Logo {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.Logo:hover {
+  color: #00ff7f;
+  text-shadow: 0 0 1rem #00ff7f;
+}
+
+.nav-bar a {
+  font-size: 1.1rem;
+  color: white;
+  margin-left: 2.7rem;
+  transition: 0.5s ease;
+  font-weight: 500;
+}
+
+.nav-bar a:hover {
+  color: #00ff7f;
+  text-shadow: 0 0 1rem #00ff7f;
+}
+
+.nav-bar a.active {
+  color: #00ff7f;
+  text-shadow: 0 0 1rem #00ff7f;
+}
+
+.nav-bar a:not(.active):not(:hover) {
+  color: white;
+}
+
+.profile-pic2 img {
+  width: 30vw;
+  /*filter: drop-shadow(7px 5px 5px #0ef); */
+  margin-top: 5px;
+}
+
+.profile-pic2 img {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-content h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*.h-content h3:nth-last-of-type(2) {
+ 	
+   }*/
+
+span {
+  color: #00ff7f;
+}
+
+.h-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.h-content p {
+  margin-top: 10px;
+  font-size: 1.6 rem;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.7;
+}
+
+.h-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.socialmedia {
+  margin-top: 15px;
+  gap: 15px;
+}
+.socialmedia,
+.DMC-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.DMC-btn {
+  margin-top: 20px; /* Optional: Add margin between social media icons and the button */
+}
+
+.socialmedia a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #00ff7f;
+  border: 0.1rem solid #00ff7f;
+  transition: 0.5s ease;
+}
+
+.socialmedia a:hover {
+  background: #00ff7f;
+  color: white;
+  box-shadow: 0 0 1rem #00ff7f;
+}
+
+button {
+  display: inline-block;
+  background-color: #00ff7f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+button a {
+  color: #394150;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Add transition to the anchor tag as well */
+}
+
+button:hover {
+  background-color: #00ff7f;
+  color: white;
+  box-shadow: 0 0 1rem #00ff7f;
+}
+
+button:hover a {
+  color: white; /* Ensure the anchor text changes color on hover */
+}
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+  color: white;
+  padding-bottom: 200px;
+}
+
+.profile-pic2 img {
+  width: 35vw;
+  filter: drop-shadow(0 4px 8px #00ff7f);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.about-content {
+  margin-top: 100px;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+}
+
+.about-content p {
+  margin: 2rem 0 3rem;
+  opacity: 0.7;
+}
+
+.maintext {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: #00ff7f;
+}
+
+.maintext h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.service-span {
+  color: white;
+}
+
+.maintext .S1-span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Style for the service section */
+.service-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Style for each service box */
+.service-box {
+  width: 30%; /* Adjust width as needed */
+  background-color: black;
+  border-radius: 15px;
+  padding: 25px;
+  /* Initial box shadow */
+  display: flex; /* Align content in the middle */
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.5s, box-shadow 0.5s; /* Add transition for smooth animation */
+  height: 420px;
+  /*box-shadow: 0 3px 10px rgba(0, 238, 255, 1);*/
+}
+
+.service-box:hover {
+  transform: translateY(-15px); /* Makes the box pop up */
+  box-shadow: 0 5px 20px rgb(0, 255, 127); /* Updated box shadow on hover */
+  border: 3px solid #00ff7f; /* Blue outline on hover */
+}
+
+/* Style for the icon */
+.service-box i {
+  font-size: 60px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  color: #00ff7f;
+}
+
+/* Style for the heading */
+.service-box h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraph */
+.service-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-box {
+  margin-top: auto;
+}
+
+.service-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.portfolio {
+  background-color: black;
+  height: auto;
+}
+
+.portfolio h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.see-all {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.see-all a {
+  color: white;
+  transition: 0.5s ease;
+}
+
+.see-all a:hover {
+  color: #00ff7f;
+  text-shadow: 0 0 1rem #00ff7f;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between items as needed */
+}
+
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners for the portfolio box */
+  box-shadow: 0 4px 8px rgba(60, 56, 56, 0.1); /* Soft shadow effect */
+  margin-top: 20px;
+  width: 75%; /* Ensure the boxes are responsive */
+  padding-bottom: 60%; /* Maintain a slightly larger square aspect ratio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 65px;
+  margin-bottom: 50px;
+}
+
+.portfolio-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the entire box */
+  border-radius: 10px 10px 0 0; /* Rounded corners, top only */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.portfolio-box:hover {
+  border: 3px solid #00ff7f;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+.portfolio-layer {
+  position: absolute;
+  bottom: 0; /* Position overlay at the bottom */
+  left: 0;
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px; /* Rounded corners, bottom only */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  opacity: 1;
+}
+
+.portfolio-layer h4 {
+  font-size: 1.7rem; /* Adjust the heading size */
+  text-align: center;
+  margin: 15px 0; /* Increase margin */
+}
+
+.portfolio-layer p {
+  text-align: center;
+  margin: 20px 15; /* Increase margin */
+}
+
+.portfolio-layer i {
+  font-size: 2rem; /* Ensure icon size remains as specified */
+  margin: 20px; /* Increase margin */
+  display: block;
+  text-align: center;
+  color: #00ff7f;
+  background-color: #fff; /* White background around the icon */
+  padding: 10px; /* Add padding to the icon for the background */
+  border-radius: 50%; /* Make the background around the icon circular */
+}
+
+.contact {
+  background-color: black;
+  height: 100%;
+}
+.contact h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: black;
+  background-color: rgba(220, 252, 231, 1);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact form textarea {
+  margin-bottom: 40px;
+}
+
+.contact form .input-box input:hover,
+.contact form textarea:hover {
+  transform: translateY(-15px); /* Makes the box pop up */
+  box-shadow: 0 5px 20px rgba(220, 252, 231 1); /* Updated box shadow on hover */
+  border: 3px solid #9fe2bf; /* Blue outline on hover */
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+}
+
+.socialmedia-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Adjust the gap between icons if needed */
+}
+
+.socialmedia-contact a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #00ff7f;
+  border: 0.2rem solid #00ff7f;
+  transition: 0.5s ease; /* Added 's' for seconds */
+  margin-bottom: 20px;
+}
+
+.socialmedia-contact a:hover {
+  background: #00ff7f;
+  color: white;
+  box-shadow: 0 0 1rem #00ff7f;
+}
+
+form button {
+  width: 100%;
+  margin-bottom: 150px;
+  font-weight: 600;
+  color: #394150;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ARS {
+  font-size: 15px;
+}
+
+.footer-iconTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #00ff7f;
+  border-radius: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: #00ff7f;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a i {
+  font-size: 2rem;
+  color: #394150;
+  transition: color 0.5s ease; /* Ensure the icon color transitions smoothly */
+}
+
+.footer-iconTop a:hover {
+  background-color: #00ff7f;
+  box-shadow: 0 0 1rem #00ff7f;
+}
+
+.footer-iconTop a:hover i {
+  color: white; /* Change the icon color when the parent <a> is hovered */
+}
+
+hr {
+  opacity: 0.4;
+}
+
+.skills {
+  height: 550px;
+}
+
+.technologies {
+  text-align: center; /* Center the content inside the .technologies container */
+}
+
+.technologies .S1-span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: block;
+  margin: 10px auto; /* Center the span element */
+}
+
+.tech-icons a img {
+  margin: 10px;
+  height: 80px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.tech-icons a img:hover {
+  transform: scale(1.1); /* Slightly increase the size */
+}
+
+.tech-icons {
+  margin-top: 20px;
+}
